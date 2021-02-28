@@ -4,7 +4,7 @@ import { ViewTypeService } from 'src/app/services/view-type.service';
 @Component({
   selector: 'app-draggable-modal',
   templateUrl: './draggable-modal.component.html',
-  styleUrls: ['./draggable-modal.component.css'],
+  styleUrls: ['./draggable-modal.component.scss'],
 })
 export class DraggableModalComponent implements AfterViewInit {
   @ViewChild('modal') private modal;
@@ -40,20 +40,23 @@ export class DraggableModalComponent implements AfterViewInit {
   mousemove(event): void {
     const element = this.modal.nativeElement;
     event.preventDefault();
-    if (event.type === 'touchmove') {
-      this.positionOne = this.positionThree - event.touches[0].clientX;
-      this.positionTwo = this.positionFour - event.touches[0].clientY;
-      this.positionThree = event.touches[0].clientX;
-      this.positionFour = event.touches[0].clientY;
-    } else {
-      this.positionOne = this.positionThree - event.clientX;
-      this.positionTwo = this.positionFour - event.clientY;
-      this.positionThree = event.clientX;
-      this.positionFour = event.clientY;
-    }
-    if (this.isMouseDown) {
-      element.style.top = element.offsetTop - this.positionTwo + 'px';
-      element.style.left = element.offsetLeft - this.positionOne + 'px';
+    if (this.isMouseDown){
+      if (event.type === 'touchmove') {
+        this.positionOne = this.positionThree - event.touches[0].clientX;
+        this.positionTwo = this.positionFour - event.touches[0].clientY;
+        this.positionThree = event.touches[0].clientX;
+        this.positionFour = event.touches[0].clientY;
+      } else {
+        this.positionOne = this.positionThree - event.clientX;
+        this.positionTwo = this.positionFour - event.clientY;
+        this.positionThree = event.clientX;
+        this.positionFour = event.clientY;
+      }
+
+      if (this.isMouseDown) {
+        element.style.top = element.offsetTop - this.positionTwo + 'px';
+        element.style.left = element.offsetLeft - this.positionOne + 'px';
+      }
     }
   }
   @HostListener('window:resize', ['$event'])
@@ -70,8 +73,8 @@ export class DraggableModalComponent implements AfterViewInit {
       style.transform = 'translate(-50%, -50%)';
     }
     if (modalPosition.bottom > yLimit) {
-      style.bottom = 0;
-      style.top = 100;
+      style.bottom = 100;
+      style.top = 0;
       style.inset = '50%';
       style.transform = 'translate(-50%, -50%)';
     }

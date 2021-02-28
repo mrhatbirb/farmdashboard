@@ -1,0 +1,17 @@
+@import "../../../scss/utilities/utilities.scss";
+#simple-chart-dialog {
+  .title {
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: bolder;
+    text-align: center;
+
+    @include responsive(small){
+      font-size: 1em;
+    }
+  }
+
+  .chart {
+    min-height: 70vh;
+  }
+}

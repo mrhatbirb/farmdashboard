@@ -9,7 +9,7 @@ import {DialogData} from '../dialog-data';
 @Component({
   selector: 'app-simple-chart-dialog',
   templateUrl: './simple-chart-dialog.component.html',
-  styleUrls: ['./simple-chart-dialog.component.css']
+  styleUrls: ['./simple-chart-dialog.component.scss']
 })
 export class SimpleChartDialogComponent implements AfterViewInit {
   @ViewChild('chart') chartEl: ElementRef;

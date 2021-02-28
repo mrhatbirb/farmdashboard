@@ -1,0 +1,45 @@
+@import "../../../scss/utilities/utilities.scss";
+
+.strategies-row-first,
+.strategies-row-second {
+  line-height: 100%;
+  display: flex;
+  width: 100%;
+}
+
+.strategies-row-first-w,
+.strategies-row-second-w {
+  width: 50%;
+  display: flex;
+
+  @include responsive(small){
+    width: 100% !important;
+  }
+
+  .first-list,
+  .second-list,
+  .third-list,
+  .fourth-list {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .list-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    height: 100%;
+    padding: 3px;
+  }
+
+  .tvl-row {
+    display: flex;
+    @include responsive(small) {
+      display: block;
+    }
+  }
+
+  .table-list {
+    width: 100%;
+  }
+}

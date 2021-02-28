@@ -5,7 +5,7 @@ import {ViewTypeService} from '../../services/view-type.service';
 @Component({
   selector: 'app-strategy-list',
   templateUrl: './strategy-list.component.html',
-  styleUrls: ['./strategy-list.component.css']
+  styleUrls: ['./strategy-list.component.scss']
 })
 export class StrategyListComponent implements OnInit {
 

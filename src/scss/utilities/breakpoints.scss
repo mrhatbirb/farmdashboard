@@ -1,6 +1,7 @@
 @mixin responsive($size){
 
     $screen_sizes: (
+        tiny:    "(max-width: 400px)",
         phone:   "(max-width: 600px)",
         tablet:  "(min-width: 700px)",
         small:   "(max-width: 900px)",

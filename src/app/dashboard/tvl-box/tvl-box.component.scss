@@ -1,0 +1,73 @@
+@import "../../../scss/utilities/utilities.scss";
+
+@include responsive(small) {
+  * {
+    font-size: 93%;
+  }
+}
+
+@include responsive(tiny) {
+  * {
+    font-size: 89%;
+  }
+
+}
+
+
+.tvl-row {
+  width: 100%;
+  padding: 3px;
+
+
+  @include responsive(small) {
+    padding: 1px;
+  }
+
+  @include responsive(phone) {
+    padding: 0;
+  }
+
+  .first-row-title {
+    font-size: 0.8em !important;
+    font-weight: bold !important;
+    text-align: center;
+  }
+
+  .first-row-name {
+    font-size: 1em !important;
+    font-weight: bold !important;
+    text-align: center;
+  }
+
+  .tvl-name {
+    width: 50%;
+    font-size: 0.9em;
+  }
+
+  .tvl-value,
+  .income-value,
+  .income-apy-value,
+  .farm-apy-value {
+    font-size: 1em;
+    width: 25%;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .tvl-img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+
+    @include responsive(small) {
+      width: 10px;
+      height: 10px;
+      margin-right: 1px;
+    }
+  }
+
+  .apy-modal {
+    position: relative;
+  }
+
+}

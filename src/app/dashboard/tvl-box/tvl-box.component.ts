@@ -9,7 +9,7 @@ import { CustomModalComponent } from 'src/app/dialogs/custom-modal/custom-modal.
 @Component({
   selector: 'app-tvl-box',
   templateUrl: './tvl-box.component.html',
-  styleUrls: ['./tvl-box.component.css']
+  styleUrls: ['./tvl-box.component.scss']
 })
 export class TvlBoxComponent implements OnInit {
   @Input() tvlName: string;

@@ -8,7 +8,7 @@ import { IChartApi } from 'lightweight-charts';
 @Component({
   selector: 'app-farm-buybacks-dialog',
   templateUrl: './farm-buybacks-dialog.component.html',
-  styleUrls: ['./farm-buybacks-dialog.component.css']
+  styleUrls: ['./farm-buybacks-dialog.component.scss']
 })
 export class FarmBuybacksDialogComponent extends ChartGeneralMethodsComponent implements AfterViewInit {
   @ViewChild('chart') chartEl: ElementRef;

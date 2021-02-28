@@ -9,7 +9,7 @@ import {ChartGeneralMethodsComponent} from 'src/app/chart/chart-general-methods.
 @Component({
   selector: 'app-profit-dialog',
   templateUrl: './profit-dialog.component.html',
-  styleUrls: ['./profit-dialog.component.css']
+  styleUrls: ['./profit-dialog.component.scss']
 })
 export class ProfitDialogComponent extends ChartGeneralMethodsComponent implements AfterViewInit {
   @ViewChild('chart') chartEl: ElementRef;

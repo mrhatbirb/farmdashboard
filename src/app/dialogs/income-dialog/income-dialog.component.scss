@@ -1,0 +1,21 @@
+@import "../../../scss/utilities/utilities.scss";
+
+#income-dialog {
+  width: 100vw;
+  max-width: 800px;
+
+  @include responsive(small) {
+    font-size: 1em;
+  }
+
+  .title {
+    font-size: 1.5em;
+    padding: 10px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .chart {
+    min-height: 70vh;
+  }
+}

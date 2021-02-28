@@ -10,7 +10,7 @@ import {HarvestDto} from '../../models/harvest-dto';
 @Component({
   selector: 'app-rewards-dialog',
   templateUrl: './rewards-dialog.component.html',
-  styleUrls: ['./rewards-dialog.component.css']
+  styleUrls: ['./rewards-dialog.component.scss']
 })
 export class RewardsDialogComponent implements AfterViewInit {
   @ViewChild('chart') chartEl: ElementRef;

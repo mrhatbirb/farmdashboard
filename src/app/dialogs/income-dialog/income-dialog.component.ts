@@ -9,7 +9,7 @@ import { IChartApi } from 'lightweight-charts';
 @Component({
   selector: 'app-income-dialog',
   templateUrl: './income-dialog.component.html',
-  styleUrls: ['./income-dialog.component.css']
+  styleUrls: ['./income-dialog.component.scss']
 })
 export class IncomeDialogComponent extends ChartGeneralMethodsComponent implements AfterViewInit {
   @ViewChild('chart') chartEl: ElementRef;

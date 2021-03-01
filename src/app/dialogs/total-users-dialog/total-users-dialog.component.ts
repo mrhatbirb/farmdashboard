@@ -8,7 +8,7 @@ import {ChartGeneralMethodsComponent} from 'src/app/chart/chart-general-methods.
 @Component({
   selector: 'app-total-users-dialog',
   templateUrl: './total-users-dialog.component.html',
-  styleUrls: ['./total-users-dialog.component.css']
+  styleUrls: ['./total-users-dialog.component.scss']
 })
 export class TotalUsersDialogComponent extends ChartGeneralMethodsComponent implements AfterViewInit {
   @ViewChild('chart') chartEl: ElementRef;

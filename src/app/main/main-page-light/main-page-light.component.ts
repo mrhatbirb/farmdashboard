@@ -6,7 +6,7 @@ import {StaticValues} from '../../static/static-values';
 @Component({
   selector: 'app-main-page-light',
   templateUrl: './main-page-light.component.html',
-  styleUrls: ['./main-page-light.component.css']
+  styleUrls: ['./main-page-light.component.scss']
 })
 export class MainPageLightComponent implements OnInit {
   opened = false;
